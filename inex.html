@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Agrícola Profissional | AgroGestão</title>
+    <!-- Certifique-se de que o arquivo style.css está na mesma pasta -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Topo do Sistema -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="emoji-logo">🚜</span>
+                <div class="logo-texto">
+                    <h1>AgroGestão</h1>
+                    <p>Tecnologia no Campo</p>
+                </div>
+            </div>
+            <div class="nav-info">
+                <span id="data-atual">Carregando data...</span>
+                <span class="status-sistema">Painel Online</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="dashboard-wrapper">
+        
+        <!-- Cabeçalho de Boas-Vindas e Indicadores Rápidos -->
+        <section class="welcome-section">
+            <div class="welcome-text">
+                <h2>Painel de Monitoramento de Safra</h2>
+                <p>Acompanhe o desenvolvimento biológico e o manejo hídrico dos seus talhões ativos.</p>
+            </div>
+            
+            <div class="resumo-cards">
+                <div class="card-mini">
+                    <div class="card-mini-icon">🌱</div>
+                    <div>
+                        <h4>Talhões Ativos</h4>
+                        <p id="total-talhoes">3 Áreas</p>
+                    </div>
+                </div>
+                <div class="card-mini">
+                    <div class="card-mini-icon">☁️</div>
+                    <div>
+                        <h4>Clima no Campo</h4>
+                        <p>24°C • Ensolarado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid de Monitoramento dos Talhões -->
+        <section class="talhoes-grid">
+            
+            <!-- Talhão 01 - Soja -->
+            <div class="talhao-card" data-cultura="Soja">
+                <div class="card-imagem" style="background-image: url('https://unsplash.com');">
+                    <span class="badge badge-crescimento">Fase Vegetativa</span>
+                </div>
+                <div class="card-corpo">
+                    <h3>Talhão 01 — Soja</h3>
+                    <div class="dados-safra">
+                        <p><span>📅 Plantio:</span> <strong>15/04/2026</strong></p>
+                        <p><span>🚜 Colheita:</span> <strong>22/08/2026</strong></p>
+                    </div>
+                    <div class="progresso-bloco">
+                        <div class="progresso-info">
+                            <span>Evolução do Ciclo</span>
+                            <strong>65%</strong>
+                        </div>
+                        <div class="barra-fundo">
+                            <div class="barra-progresso" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-acoes">
+                    <button class="btn-irrigar">💧 Registrar Irrigação</button>
+                </div>
+            </div>
+
+            <!-- Talhão 02 - Milho -->
+            <div class="talhao-card" data-cultura="Milho">
+                <div class="card-imagem" style="background-image: url('https://unsplash.com');">
+                    <span class="badge badge-crescimento">Floração</span>
+                </div>
+                <div class="card-corpo">
+                    <h3>Talhão 02 — Milho</h3>
+                    <div class="dados-safra">
+                        <p><span>📅 Plantio:</span> <strong>02/05/2026</strong></p>
+                        <p><span>🚜 Colheita:</span> <strong>10/09/2026</strong></p>
+                    </div>
+                    <div class="progresso-bloco">
+                        <div class="progresso-info">
+                            <span>Evolução do Ciclo</span>
+                            <strong>38%</strong>
+                        </div>
+                        <div class="barra-fundo">
+                            <div class="barra-progresso" style="width: 38%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-acoes">
+                    <button class="btn-irrigar">💧 Registrar Irrigação</button>
+                </div>
+            </div>
+
+            <!-- Talhão 03 - Trigo -->
+            <div class="talhao-card alerta" data-cultura="Trigo">
+                <div class="card-imagem" style="background-image: url('https://unsplash.com');">
+                    <span class="badge badge-colheita">Maturação Final</span>
+                </div>
+                <div class="card-corpo">
+                    <h3>Talhão 03 — Trigo</h3>
+                    <div class="dados-safra">
+                        <p><span>📅 Plantio:</span> <strong>10/01/2026</strong></p>
+                        <p><span>🚜 Colheita:</span> <strong>28/06/2026</strong></p>
+                    </div>
+                    <div class="progresso-bloco">
+                        <div class="progresso-info">
+                            <span>Evolução do Ciclo</span>
+                            <strong>95%</strong>
+                        </div>
+                        <div class="barra-fundo">
+                            <div class="barra-progresso" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-acoes">
+                    <button class="btn-irrigar">💧 Registrar Irrigação</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>&copy; 2026 AgroGestão Digital. Monitoramento Inteligente de Lavouras.</p>
+    </footer>
+
+    <!-- Vinculação do comportamento Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
